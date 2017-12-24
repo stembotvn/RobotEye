@@ -3,7 +3,7 @@
 // Uses a sequence of bitmaps defined as a font to display animations of eyes to convey emotion.
 // Eyes are coordinated to work together.
 //
-#include "MD_MAX72xx.h"
+#include <MD_MAX72xx.h>
 #include <SPI.h>
 #include "MD_RobotEyes.h"
 
@@ -70,12 +70,12 @@ void loop()
     index++;
     if (index >= ARRAY_SIZE(eSeq)) 
       index = 0;
-    E.setText(eSeq[index].name);
+   
     state = S_TEXT;
     break;
 
   case S_TEXT: // wait for the text to finish
-    if (b)  // text animation is finished
+   
     {
       E.setAnimation(eSeq[index].e, true);
       state = S_ANIM;
@@ -100,4 +100,3 @@ void loop()
     break;
   }
 }
-
