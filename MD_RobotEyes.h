@@ -2,7 +2,7 @@
 //
 #pragma once
 
-#include <MD_MAX72xx.h>
+#include "MD_MAX72xx.h"
 
 // Misc defines
 #define ARRAY_SIZE(a) (sizeof(a)/sizeof(a[0]))  ///< number of elements in an array

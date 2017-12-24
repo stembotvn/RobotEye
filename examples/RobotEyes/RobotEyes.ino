@@ -3,7 +3,7 @@
 // Uses a sequence of bitmaps defined as a font to display animations of eyes to convey emotion.
 // Eyes are coordinated to work together.
 //
-#include <MD_MAX72xx.h>
+#include "MD_MAX72xx.h"
 #include <SPI.h>
 #include "MD_RobotEyes.h"
 
